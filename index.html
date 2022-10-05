@@ -7,7 +7,10 @@
     <title>AkobirDev | Portfolio Web Site</title>
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Normalize css -->
@@ -17,7 +20,7 @@
     <!-- Header Section Start -->
     <header class="header" id="header">
       <div class="container flex">
-        <div class="brand-name">AkobirDev.</div>
+        <div class="brand-name">Akobir<span>Dev.</span></div>
         <nav>
           <ul class="navigation">
             <li><a href="#main" class="navigation-item">Home</a></li>
@@ -38,7 +41,7 @@
         <div class="main-info">
           <h5>Hello, my name is</h5>
           <h1>Akobir Tursunov</h1>
-          <h4>And I'm a <span>Developer</span></h4>
+          <h4>And I'm <span class="auto-effect-1"></span></h4>
           <button class="btn">Hire me</button>
         </div>
         <div class="main-image">
@@ -49,7 +52,7 @@
       </div>
       <!-- To Top button -->
       <a href="#main" class="to-top">
-        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
       </a>
     </section>
     <!-- Main Section End -->
@@ -65,7 +68,7 @@
             </div>
           </div>
           <div class="about-info">
-            <h3>I'm Akobir and I'm a <span>Developer</span></h3>
+            <h3>I'm Akobir and I'm <span>Developer</span></h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quam
               quaerat quisquam nesciunt quasi sapiente harum quas sequi.
@@ -93,7 +96,7 @@
         <div class="services-cards flex">
           <div class="services-card">
             <div class="box">
-              <i class="fab fa-paint-brush"></i>
+              <i class="fas fa-paint-brush"></i>
               <h4>Web Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -103,7 +106,7 @@
           </div>
           <div class="services-card">
             <div class="box">
-              <i class="fab fa-chart-line"></i>
+              <i class="fas fa-chart-line"></i>
               <h4>Web Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -113,7 +116,7 @@
           </div>
           <div class="services-card">
             <div class="box">
-              <i class="fab fa-code"></i>
+              <i class="fas fa-code"></i>
               <h4>Web Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -123,7 +126,7 @@
           </div>
           <div class="services-card">
             <div class="box">
-              <i class="fab fa-paint-brush"></i>
+              <i class="fas fa-paint-brush"></i>
               <h4>Web Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -133,7 +136,7 @@
           </div>
           <div class="services-card">
             <div class="box">
-              <i class="fab fa-chart-line"></i>
+              <i class="fas fa-chart-line"></i>
               <h4>Web Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -143,7 +146,7 @@
           </div>
           <div class="services-card">
             <div class="box">
-              <i class="fab fa-code"></i>
+              <i class="fas fa-code"></i>
               <h4>Web Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -177,14 +180,14 @@
           <div class="skills-stat">
             <div class="stat-info flex">
               <span class="lang">HTML</span>
-              <span class="perc">70%</span>
+              <span class="perc">80%</span>
             </div>
             <div class="line line-html"></div>
           </div>
           <div class="skills-stat">
             <div class="stat-info flex">
               <span class="lang">CSS</span>
-              <span class="perc">60%</span>
+              <span class="perc">70%</span>
             </div>
             <div class="line line-css"></div>
           </div>
@@ -205,9 +208,16 @@
           <div class="skills-stat">
             <div class="stat-info flex">
               <span class="lang">JavaScript</span>
-              <span class="perc">50%</span>
+              <span class="perc">70%</span>
             </div>
             <div class="line line-js"></div>
+          </div>
+          <div class="skills-stat">
+            <div class="stat-info flex">
+              <span class="lang">React</span>
+              <span class="perc">50%</span>
+            </div>
+            <div class="line line-r"></div>
           </div>
         </div>
       </div>
@@ -218,7 +228,188 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <p class="section-title">My works</p>
-        <div class="works"></div>
+        <div class="works">
+          <div class="work">
+            <img src="./images/ai-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/AI-landing-page.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/calc-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/calculator.js.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/countdown-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/coutdown.js.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/john-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/John-portfolio.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/lab-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/lab-work.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/one-page-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/One-page-website.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/p2-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/portfolio2.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/photog-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/photograph-portfolio.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/quiz-work.png" alt="ai" />
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <a
+                class="work-link"
+                href="ai-landing-page-project.vercel.app"
+                target="_blank"
+                >Go to the work</a
+              >
+              <br />
+              <a
+                class="work-github"
+                href="https://github.com/AkobirDev/quiz-app.js.git"
+                target="_blank"
+              >
+                Github code
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Portfolio Section End -->
@@ -236,21 +427,21 @@
             Voluptatibus, voluptatem.
           </p>
           <div class="box">
-            <i></i>
+            <i class="fas fa-user"></i>
             <div class="info">
               <h5>Name</h5>
               <p>Akobir Tursunov</p>
             </div>
           </div>
           <div class="box">
-            <i></i>
+            <i class="fa-solid fa-location"></i>
             <div class="info">
               <h5>Address</h5>
-              <p>Uzbekistan,Bukhara</p>
+              <p>Uzbekistan,Tashkent</p>
             </div>
           </div>
           <div class="box">
-            <i></i>
+            <i class="fas fa-envelope"></i>
             <div class="info">
               <h5>Email</h5>
               <p>akobirtursunov@email.ru</p>
@@ -268,6 +459,23 @@
             <textarea placeholder="Message..."></textarea>
             <button class="btn">Send Message</button>
           </form>
+          <div class="socials">
+            <a class="social" href="">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a class="social" href="">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a class="social" href="">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="social" href="">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="social" href="">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>

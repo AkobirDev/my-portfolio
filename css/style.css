@@ -80,6 +80,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 html {
   scroll-behavior: smooth;
@@ -97,20 +98,42 @@ html {
   flex-wrap: wrap;
 }
 .to-top {
-  display: inline-block;
+  /* display: inline-block; */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 50px;
   height: 50px;
   position: fixed;
-  color: #fff;
   right: 20px;
   bottom: 20px;
   width: 25px;
   height: 25px;
   border-radius: 4px;
   background-color: crimson;
+  animation: topdown 0.5s linear;
 }
+
+i.fa-arrow-up {
+  position: absolute;
+  color: #fff;
+  /* text-align: center; */
+  animation: topdown 0.7s ease infinite;
+}
+
+@keyframes topdown {
+  0% {
+    top: 0.6px;
+  }
+  60% {
+    bottom: 0.6px;
+  }
+}
+
 section {
-  max-height: 100vh;
+  /* max-height: 120vh; */
   padding-top: 120px;
   padding-bottom: 100px;
 }
@@ -172,7 +195,7 @@ section {
   transition: background 0.7s linear;
 }
 .header.header-white {
-  background-color: #fff;
+  background-color: rgb(220, 215, 215);
 }
 .header.header-white .brand-name,
 .header.header-white .navigation-item {
@@ -182,6 +205,9 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
+}
+.brand-name span {
+  color: crimson;
 }
 header nav ul {
   list-style: none;
@@ -331,8 +357,8 @@ header nav ul .navigation-item:hover {
 }
 .services-card i {
   color: crimson;
-  width: 50px;
-  height: 50px;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
   transition: color 0.3s ease;
 }
 .services-card h4 {
@@ -416,7 +442,7 @@ header nav ul .navigation-item:hover {
 .skills .skills-stats .skills-stat .line-css::before {
   content: "";
   position: absolute;
-  width: 75%;
+  width: 70%;
   height: 4px;
   background-color: crimson;
 }
@@ -437,6 +463,13 @@ header nav ul .navigation-item:hover {
 .skills .skills-stats .skills-stat .line-js::before {
   content: "";
   position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: crimson;
+}
+.skills .skills-stats .skills-stat .line-r::before {
+  content: "";
+  position: absolute;
   width: 50%;
   height: 4px;
   background-color: crimson;
@@ -446,7 +479,8 @@ header nav ul .navigation-item:hover {
 .portfolio {
   background-color: #000;
   color: #fff;
-  height: 100vh;
+  width: 100%;
+  /* height: 100vh; */
 }
 .portfolio .section-title::before {
   content: "";
@@ -457,6 +491,63 @@ header nav ul .navigation-item:hover {
   background-color: #000;
 }
 
+.portfolio .works {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+.portfolio .work {
+  position: relative;
+  flex: 0 0 30%;
+  max-width: 33.3%;
+  padding: 15px;
+  width: 450px;
+  height: 450px;
+  flex-wrap: wrap;
+}
+.portfolio .work:not(:last-child) {
+  margin-right: 2rem;
+}
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.7s ease;
+}
+.overlay-text {
+  display: none;
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work:hover .overlay {
+  display: block;
+}
+.work:hover .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease;
+}
+.overlay-text a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.7s ease;
+}
 /* Contact Styles Start */
 .contact {
   padding-bottom: 0;
@@ -480,10 +571,9 @@ header nav ul .navigation-item:hover {
   margin-bottom: 8px;
 }
 .contact .contact-info .box i {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
+  display: inline-block;
+  color: crimson;
+  font-size: 1.5rem;
   margin-right: 12px;
 }
 .contact .contact-info .box .info h5 {
@@ -522,6 +612,21 @@ textarea {
 }
 .contact-form .btn {
   margin-top: 20px;
+}
+.contact-form .socials {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form .social i {
+  font-size: 2.5rem;
+  color: crimson;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.social:hover i {
+  color: rgb(212, 115, 134);
+  /* background-color: #fff; */
 }
 
 /* Footer Styles */
