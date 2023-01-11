@@ -1,3 +1,11 @@
+//  Bar
+const navigation = document.querySelector("header nav ul");
+const bar = document.querySelector(".fa-bars");
+bar.addEventListener("click", function () {
+  navigation.classList.toggle("active");
+  // bar.toggleClass("active");
+});
+
 //    Navbar Effect
 
 const header = document.querySelector("#header");
@@ -31,7 +39,6 @@ function typing() {
 }
 
 function erase() {
-  // let eraseIndex = currentWord.length;
   if (letterIndex > 0) {
     txt.innerHTML = words[wordIndex].substring(0, letterIndex - 1);
     letterIndex--;
